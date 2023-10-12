@@ -5,7 +5,16 @@ A few days ago, I drove the Model X to experience a dancing light show. After lo
 ## Getting Started
 
 
+## Screenshots
+
+## Features
+
+## ChangeLog
+Changelog is available [here](https://github.com/kuloud/flutter_light_show_creator/blob/main/Changelog.md)
+
+## Credits
 - [Tesla Light Show xLights Guide](https://github.com/teslamotors/light-show)
+- [flutter_file_picker](https://github.com/miguelpruivo/flutter_file_picker)
 
 ## License
 ```

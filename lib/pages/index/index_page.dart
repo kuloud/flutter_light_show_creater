@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_light_show_creator/pages/index/components/menu_button.dart';
 import 'package:flutter_light_show_creator/pages/index/navigation_item.dart';
 import 'package:flutter_light_show_creator/pages/music/library_music_page.dart';
 
@@ -82,9 +83,6 @@ class _IndexPageState extends State<IndexPage> {
       _menus = _railMenus;
     }
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        ),
         bottomNavigationBar: MediaQuery.of(context).size.width < 640
             ? BottomNavigationBar(
                 useLegacyColorScheme: false,
@@ -105,7 +103,7 @@ class _IndexPageState extends State<IndexPage> {
             // Show the navigaiton rail if screen width >= 640
             if (MediaQuery.of(context).size.width >= 640)
               NavigationRail(
-                  // minWidth: 55.0,
+                  backgroundColor: Theme.of(context).colorScheme.inversePrimary,
                   selectedIndex: _selectedIndex,
                   onDestinationSelected: (int index) {
                     setState(() {
@@ -113,15 +111,23 @@ class _IndexPageState extends State<IndexPage> {
                     });
                   },
                   labelType: NavigationRailLabelType.all,
-                  trailing: const Expanded(
+                  trailing: Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Column(
-                            children: [Icon(Icons.settings), Text('Settings')],
-                          ),
+                        MenuButton(
+                          icon: const Icon(Icons.import_export),
+                          onTap: () {
+                            // TODO
+                          },
+                          label: 'Export',
+                        ),
+                        MenuButton(
+                          icon: const Icon(Icons.settings),
+                          onTap: () {
+                            // TODO
+                          },
+                          label: 'Settings',
                         )
                       ],
                     ),

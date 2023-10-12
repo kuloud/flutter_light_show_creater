@@ -1,4 +1,4 @@
-# flutter_light_show_creater
+# flutter_light_show_creator
 
 A new Flutter project.
 

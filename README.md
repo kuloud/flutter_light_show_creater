@@ -1,16 +1,9 @@
 # flutter_light_show_creator
 
-A new Flutter project.
+A few days ago, I drove the Model X to experience a dancing light show. After looking at the Tesla light-show project, I found it a little difficult to get started, so I want to take some time to learn the relevant concepts and create an easy-to-use light show editor, hoping to automatically generate well-performing light show material files through simple music import. Then provides some simple and intuitive editing functions.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+- [Tesla Light Show xLights Guide](https://github.com/teslamotors/light-show)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

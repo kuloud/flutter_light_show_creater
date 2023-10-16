@@ -34,7 +34,7 @@ class _LibraryMusicPageState extends State<LibraryMusicPage> {
         onPressed: () {
           importMusic();
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
